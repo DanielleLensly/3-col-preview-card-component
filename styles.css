@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Lexend Deca;
+  src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Big Shoulders Display;
+  src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 88px 24px;
+}
+
+.car {
+  max-width: 327px;
+  padding: 48px 49px;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: Big Shoulders Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+p {
+  width: 231px;
+  color: #fff;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+button {
+  width: 146px;
+  height: 48px;
+  border-radius: 25px;
+  background: #F2F2F2;
+  border: 1px #F2F2F2;
+  margin: 25px 0 0 0;
+  font-family: Lexend Deca;
+}
+
+button a {
+  color: #E28625;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+button:hover {
+  cursor: url("images/Pointer.svg"), auto;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #F2F2F2 !important; /*Added !important to force button text color to change when hovered over.*/
+}
+
+.attribution {
+  position: static; 
+  bottom: 20px;
+  right: 42%;
+  left: 43%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.sedan {
+  border-radius: 8px 8px 0px 0px;
+  background: #E28625;
+}
+
+.sedan button {
+  color: #E28625;
+}
+
+.suv {
+  background: #006971;
+}
+
+.suv button {
+  color: #006971;
+}
+
+.luxury {
+  border-radius: 0px 0px 8px 8px ;
+  background: #004140;
+}
+
+.luxury button {
+  color: #004140;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .main {
+    width: 920px !important; /*Force correct size.*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 920px;
+    flex-direction: row !important; /*Force flex direction to change.*/
+  }
+  
+  .car {
+    width: 307px;
+    padding: 48px;
+  }
+
+  button {
+    margin-top: 83px;
+  }
+  
+  .attribution {
+    position: fixed; 
+    bottom: 20px;
+    right: 42%;
+    left: 43%;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .sedan {
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .luxury {
+    border-radius: 0px 8px 8px 0px;
+  }
+}
